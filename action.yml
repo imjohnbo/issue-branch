@@ -1,0 +1,11 @@
+name: 'Issue Branch'
+description: 'GitHub Action that creates Git branches for open issues'
+author: 'imjohnbo'
+inputs:
+  apply-to-existing:
+    description: 'Whether to apply this action to existing issues in repo'
+    default: true
+    required: false
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
